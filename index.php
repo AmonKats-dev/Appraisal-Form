@@ -168,7 +168,7 @@
 					</div>
 
 					<div class="form-group">
-						<a href="#" class="btn btn-primary" id="prev-2">Previous</a>
+						<a href="#" class="btn btn-primary" id="prev-1">Previous</a>
 						<a href="#" class="btn btn-primary" id="cont-2">Continue</a>
 					</div>
 				</div>
@@ -426,7 +426,7 @@
 
 
 					<div class="form-group">
-						<a href="#" class="btn btn-primary" id="prev-3">Previous</a>
+						<a href="#" class="btn btn-primary" id="prev-2">Previous</a>
 						<a href="#" class="btn btn-primary" id="cont-3">Continue</a>
 						<!-- <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success"> -->
 					</div>
@@ -630,7 +630,7 @@
 					</table>
 
 					<div class="form-group">
-						<a href="#" class="btn btn-primary" id="prev-2">Previous</a>
+						<a href="#" class="btn btn-primary" id="prev-3">Previous</a>
 						<a href="#" class="btn btn-primary" id="cont-4">Continue</a>
 					</div>
 				</div>
@@ -661,14 +661,14 @@
 						</div><br>
 
 					<div class="form-group">
-						<a href="#" class="btn btn-primary" id="prev-2">Previous</a>
+						<a href="#" class="btn btn-primary" id="prev-4">Previous</a>
 						<a href="#" class="btn btn-primary" id="cont-5">Continue</a>
 					</div>
 				</div>
 
 				<div id="sixth">
 					<h5 class="text-center bg-primary p-1 rounded text-light">SECTION E: COMMENTS, RECOMMENDATIONS (IF ANY) AND SIGNATURES</h5>
-					<p>This section is to be completed by the Appraisee, Appraiser and the counter signing Officers. It is a confirmation that the appraisal meeting took place and that there was agreement or if there was disagreement, it was resolved. It is also confirmation that the action plan to improve performance was discussed and agreed upon. The Appraisee / Appraiser / countersigning officer should use this section to comment about the job, career and any other relevant information.</p><br>
+					<p>This section is to be completed by the Appraisee, Appraiser and the counter signing Officers. It is a confirmation that the appraisal meeting took place and that there was agreement or if there was disagreement, it was resolved. It is also confirmation that the action plan to improve performance was discussed and agreed upon. The Appraisee / Appraiser / countersigning officer should use this section to comment about the job, career and any other relevant information.</p><br><hr class="rounded">
 
 					<h5>COMMENTS OF THE APPRAISEE</h5>
 					<div class="form-group">
@@ -685,7 +685,7 @@
 					<div class="form-group">
 						<label for="dob">Date</label>
 						<input type="date" name="dob" class="form-control" placeholder="Date">
-					</div><br><p></p><hr class="rounded">
+					</div><br><hr class="rounded">
 
 					<h5>COMMENTS OF THE APPRAISER</h5>
 					<div class="form-group">
@@ -759,7 +759,7 @@
 					</div>
 
 					<div class="form-group">
-						<a href="#" class="btn btn-primary" id="prev-2">Previous</a>
+						<a href="#" class="btn btn-primary" id="prev-5">Previous</a>
 						<a href="#" class="btn btn-primary" id="cont-6">Complete</a>
 					</div>
 				</div>
@@ -768,7 +768,7 @@
 				<div class="alert alert-success" role="alert">
 				  Conglatulations ! You have Successfully Completed Filling In the Form.
 				</div>
-				<a href="#" class="btn btn-primary" id="prev-7">Previous</a>
+				<a href="#" class="btn btn-primary" id="prev-6">Previous</a>
 				<a href="#" class="btn btn-primary" id="preview">Preview</a>
 				<input type="submit" name="submit" class="btn btn-success" value="Submit" id="cont-7">
 
@@ -829,12 +829,49 @@
 			$("#progressText").html("Completed");
 		});
 
-		$("#prev-2").click(function(){
-			$("#third").show();
+		$("#prev-1").click(function(){
+			$("#first").show();
 			$("#second").hide();
-			$("#progressBar").css("width", "100%");
-			$("#progressText").html("Step - 8");
+			$("#progressBar").css("width", "30%");
+			$("#progressText").html("Step - 1");
 		});
+
+		$("#prev-2").click(function(){
+			$("#second").show();
+			$("#third").hide();
+			$("#progressBar").css("width", "40%");
+			$("#progressText").html("Step - 2");
+		});
+
+		$("#prev-3").click(function(){
+			$("#third").show();
+			$("#fourth").hide();
+			$("#progressBar").css("width", "50%");
+			$("#progressText").html("Step - 3");
+		});
+
+		$("#prev-4").click(function(){
+			$("#fourth").show();
+			$("#fifth").hide();
+			$("#progressBar").css("width", "60%");
+			$("#progressText").html("Step - 4");
+		});
+
+		$("#prev-5").click(function(){
+			$("#fifth").show();
+			$("#sixth").hide();
+			$("#progressBar").css("width", "70%");
+			$("#progressText").html("Step - 5");
+		});
+
+		$("#prev-6").click(function(){
+			$("#sixth").show();
+			$("#final").hide();
+			$("#progressBar").css("width", "80%");
+			$("#progressText").html("Step - 6");
+		});
+
+		
 	});
 </script>
 
